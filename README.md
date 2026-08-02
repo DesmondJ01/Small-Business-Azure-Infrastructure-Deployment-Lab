@@ -1,3 +1,4 @@
+
 # Small-Business-Azure-Infrastructure-Deployment-Lab
 Hands-on Azure project deploying a secure small business cloud infrastructure using Microsoft Entra ID, RBAC, Administrative Units, and identity management. The repository includes a detailed breakdown of the architecture, implementation process, design decisions, and the purpose of each Azure resource used.
 
@@ -16,13 +17,16 @@ The goal of this project was to build a secure and scalable cloud environment wh
 
 ### Identity & Access Management
 
-* Create 30–40 Microsoft Entra ID users
+* Create 30–40 Microsoft Entra ID users  
 * Organize users into departments
 * Create security groups
 * Configure Role-Based Access Control (RBAC)
-* Enable Multi-Factor Authentication (MFA)
+* Enable Multi-Factor Authentication (MFA)<img width="1908" height="858" alt="departments finalized" src="https://github.com/user-attachments/assets/deea4a49-6d45-4135-ac5f-702ddd159094" />
+
 * Configure Self-Service Password Reset (SSPR)
 * Create Administrative Units (where applicable)
+<img width="1897" height="871" alt="Group creation" src="https://github.com/user-attachments/assets/333d841f-619b-4463-a045-3d69a39f80fe" />
+
 
 ### Departments
 
@@ -48,7 +52,7 @@ The following Azure resources were deployed:
 | Azure Key Vault              | Secure secrets and credentials               |
 | Recovery Services Vault      | Backup and disaster recovery                 |
 | Network Security Group (NSG) | Control inbound and outbound network traffic |
-
+<img width="1897" height="871" alt="Group creation" src="https://github.com/user-attachments/assets/333d841f-619b-4463-a045-3d69a39f80fe" />
 ---
 
 ## Identity & Security Configuration
@@ -58,6 +62,8 @@ The following Azure resources were deployed:
 * Created 20–30 user accounts
 * Assigned users to departments
 * Organized users into security groups
+<img width="1916" height="868" alt="NSG insight" src="https://github.com/user-attachments/assets/2a5c798e-f080-4051-8b1b-1aef14e3e585" />
+
 
 ### Role-Based Access Control (RBAC)
 
@@ -93,12 +99,14 @@ Administrative roles were assigned only where necessary.
 * Deployed in Azure
 * Connected to the virtual network
 * Configured for administrative management
-
+<img width="1917" height="868" alt="VM creation" src="https://github.com/user-attachments/assets/ae738af8-4a7b-4216-9bdb-0b97a5c29ff6" />
 ### Linux VM
 
 * Deployed in Azure
 * Connected to the virtual network
 * Verified network connectivity
+<img width="1917" height="862" alt="Linuxvm creation" src="https://github.com/user-attachments/assets/2d3f510f-3b42-459c-b9f8-37c81892a7e9" />
+
 
 ---
 
@@ -111,6 +119,7 @@ Configured the following networking components:
 * Network Security Groups
 * Private IP addressing
 * Virtual machine communication
+<img width="1918" height="863" alt="Vnet creation" src="https://github.com/user-attachments/assets/7a8e6157-de58-44a6-9587-ce93cceee9f1" />
 
 ---
 
@@ -145,7 +154,11 @@ The following screenshots document the deployment process and final environment:
 * Azure Key Vault
 * Azure Backup
 * Network Security Groups
-
+<img width="1865" height="875" alt="MFA enabled" src="https://github.com/user-attachments/assets/47430fa5-f16a-4be2-ad85-50cc9ae07365" />
+<img width="1912" height="857" alt="Resource Group created" src="https://github.com/user-attachments/assets/45c487d8-076a-4c18-82ca-9a4c65e54fad" />
+<img width="1917" height="877" alt="RSVcreation" src="https://github.com/user-attachments/assets/79ae6861-349b-4bc3-ac4a-3dc284c65019" />
+<img width="1918" height="815" alt="Storage Account creation" src="https://github.com/user-attachments/assets/8aba1e0a-027d-4a40-9259-b7cde4c91b83" />
+<img width="1913" height="867" alt="Keyvault for VM" src="https://github.com/user-attachments/assets/ea8d121f-ee13-48eb-9d7e-ef858fbcb43d" />
 ---
 
 ## Skills Demonstrated
@@ -193,6 +206,8 @@ While importing users into Microsoft Entra ID using a CSV file, the bulk import 
 * Verified my tenant's default `onmicrosoft.com` domain.
 * Updated the CSV with unique `userPrincipalName` values that matched the tenant's verified domain.
 * Re-ran the bulk import successfully.
+<img width="1917" height="862" alt="Failed Bulk user Creation attempts" src="https://github.com/user-attachments/assets/e55a374b-ee40-48d3-bf0b-526bb47b6950" />
+
 
 **Lesson Learned**
 This reinforced the importance of carefully validating user identity information before performing bulk operations in Microsoft Entra ID. Even a small formatting issue can prevent an entire batch import from succeeding.
